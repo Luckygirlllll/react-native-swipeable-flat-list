@@ -40,6 +40,10 @@ export default class SwipeableFlatList extends Component {
 		onScroll?.(event);
 	}
 
+	closeChild = () => {
+		this._itemRef && this._itemRef.close();
+	} 
+
 	render = () => {
 		const {
 			data,
